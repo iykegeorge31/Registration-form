@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: black;
+}
+.flex-container {
+    display: flex;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    background-image: url("bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+   
+}
+.left {
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+}
+.left h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+.left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+.right {
+    margin-right: 100px;
+    margin-top:50px; 
+    margin-bottom: 50px;
+    /* width: 100%; */
+}
+
+.container {
+    padding: 16px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    background: #FFF;
+    color: black;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+.btn {
+    background-color: hsl(248, 32%, 49%);
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+} 
+.btn span {
+    font-weight: bolder;
+
+}
+a {
+    color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+/* Laptop view */
+
+@media only screen and (max-width: 992px) {
+    body {
+        width: 100%;
+    }
+    .flex-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .left {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    
+    .right {
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .registerbtn {
+        font-size: 10px;
+    }
+        
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+    .flex-container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .left {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    .right {
+        margin-right: 0;
+    }
+    .registerbtn {
+        font-size: 10px;
+    }
+}
